@@ -1,0 +1,42 @@
+
+# API 1 
+POST http://localhost:4010/api/register/
+Content-Type: application/json
+
+{
+  "username": "adam_richard1",
+  "password": "richard_5671",
+  "name": "Adam Richard1",
+  "gender": "male"
+}
+
+###
+
+# API 2
+
+POST http://localhost:4010/api/login
+Content-Type: application/json
+
+{
+  "username":"adam_richard",
+  "password":"richard_567"
+}
+
+###
+
+
+POST http://localhost:4010/api/appointments
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyMTMyMDMyNiwiZXhwIjoxNzIxMzIzOTI2fQ.lBub85LRvGkmLGNGqlSC6kpTvGoHJT9b8IPmsszF8pE
+Content-Type: application/json
+
+{
+  "date": "2024-06-27T10:00:00Z",
+  "description": "Doctor appointment"
+}
+
+####
+
+GET http://localhost:4010/api/appointments
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyMTMyMDMyNiwiZXhwIjoxNzIxMzIzOTI2fQ.lBub85LRvGkmLGNGqlSC6kpTvGoHJT9b8IPmsszF8pE
+
+###
